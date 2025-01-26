@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customers</title>
+</head>
+<body>
+    <h1>
+        Hi, Ali!
+    </h1>
+    <p>
+        Welcome to the django world.
+    </p>
+    <h2>
+        Customer Names
+    </h2>
+    <ul>
+        {% for x in mycustomers %}
+          <li> <a href="customer_details/{{x.id}}" >{{x.first_name}} {{x.last_name}}</a></li>
+        {% endfor %}
+    
+    </ul>
+</body>
+</html>
